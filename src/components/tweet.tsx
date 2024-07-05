@@ -118,8 +118,6 @@ export default function Tweet({ username, photo, tweet, userId, id }: ITweet) {
 
     try {
       if (file !== null) {
-        const photoRef = ref(storage, `tweets/${user.uid}/${id}`);
-        await deleteObject(photoRef);
         const locationRef = ref(storage, `tweets/${user.uid}/${id}`);
         const result = await uploadBytes(locationRef, file);
         const imgUrl = await getDownloadURL(result.ref);

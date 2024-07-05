@@ -38,7 +38,7 @@ const AttachFileButton = styled.label`
   border: 1px solid #1d9bf0;
   font-size: 14px;
   font-weight: 600;
-  curseur: pointer;
+  cursor: pointer;
 `;
 
 const AttachFileInput = styled.input`
